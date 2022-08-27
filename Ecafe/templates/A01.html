@@ -1,0 +1,75 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIEW</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'css/table.css' %}">
+
+<body>
+    
+   
+    <div class="table-border">
+      <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table class="table table-striped table-dark">
+          <tr>
+            
+            <th scope="col">Semester </th>
+            <th scope="col">Subject</th>
+            <th scope="col">syllabus</th>
+            <th scope="col">Study_Material</th>
+            <th scope="col">Mock_Test</th>
+            <th scope="col">Project</th>
+           
+          </tr>
+          {% for i in cr %}
+            <tr>
+
+                <td>{{i.Semester}}</td>
+                <td>{{i.Subject}}</td>
+            
+                <td>{{i.Study_Material}}</td>
+
+
+                {% if i.syllabus %}
+
+                <label for="">syllabus &nbsp;&nbsp; : <a href="/static/files/digital.jpg" attributes-list download alt="" width="60" height="60">Download</label><br><br><br><br></label>
+<td>
+    {% else %}
+    <img src="/media/folder/digital.jpg">
+
+    {% endif %}
+</td>
+                <td>{{i.Mock_Test}}</td>
+                <td>{{i.Project}}</td>
+                
+                {% if i.image %}
+                <td>
+    
+                </td>
+                {% else %}
+                <td>
+                
+                </td>
+
+        
+                <td>
+                  {% endif %}
+                </td>
+              
+          </tr>
+        
+          {% endfor %}
+          </table>
+      
+        </form>
+      
+</body>
+</html>
+

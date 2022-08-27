@@ -1,0 +1,19 @@
+<form action="" method="POST">
+
+    {% csrf_token %}
+
+<label></label>Semester</label>
+<input type="text"name='Semester'><br><br>
+<label>Subject</label>
+<input type="text"name='Subject'><br><br>
+<label>Syllabus</label>
+<input type="file-uploader" name='syllabus' multiple/><br><br>
+<label>Study_Materials</label>
+<input type="file-uploader"name='Study_Materials' id="file-uploader" multiple/>
+<label>mock text</label>
+<input type="text"name='Mock_Test'><br><br>
+<label>Project</label>
+<input type="text"name='Project'><br><br>
+<input type="submit" value="submit">
+</form>
+

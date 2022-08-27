@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="#" />
+<meta name="robots" content="noindex">
+<title>St. Joseph's College</title>
+<link rel="stylesheet" href='../libcommon/bootstrap/css/bootstrap.css' type="text/css">
+<link rel="stylesheet" href="../libcommon/style/css/classic.css" type="text/css" />
+<link rel="stylesheet" href="../libcommon/style/css/desktop.css" type="text/css" />
+<link rel="stylesheet" href="../libcommon/style/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../libcommon/style/jquery.alerts.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../libcommon/style/rating.css" type="text/css" />
+<link rel="stylesheet" href="../libcommon/plugins/toastr/toastr.min.css" />
+<link rel="stylesheet" href="../libcommon/styleguide/ams/dist/css/styles.min.css" type="text/css">
+<link rel="stylesheet" href="../libcommon/style/bootstrap-multiselect.css" type="text/css">
+<link rel="stylesheet" href="../libcommon/plugins/bootstrap-datepicker/css/bootstrap-datetimepicker.min.css" />
+
+<script type="text/javascript" src="../libcommon/plugins/jQuery3.2.1/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../libcommon/plugins/trumbowyg/trumbowyg.min.js"></script>
+<script type="text/javascript" src="../libcommon/javascripts/skinnytip/skinnytip.js"></script>
+<script type="text/javascript" src="../libcommon/js/moment.min.js"></script>
+<script type="text/javascript" src="../libcommon/plugins/bootstrap-datepicker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="../libcommon/plugins/trumbowyg/plugins/trumbowyg.cleanpaste.js"></script>
+<script type="text/javascript">
+        $3 = jQuery.noConflict(true);
+    </script>
+<script type="text/javascript" src="../libcommon/javascripts/jquery.js"></script>
+<script type="text/javascript" src="../libcommon/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="../libcommon/javascripts/ajaxupload.js"></script>
+<script type="text/javascript" src="../libcommon/javascripts/rating.js" language="javascript"></script>
+<script type="text/javascript" src="../libcommon/javascripts/jquery.alerts.js"></script>
+<script type='text/javascript' src='../libcommon/javascripts/jquery/jquery-1.7.1.min.js'></script>
+<script type="text/javascript" src="../libcommon/plugins/jsrender.min.js"></script>
+<script type="text/javascript" src="../libcommon/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../libcommon/js/moment.min.js"></script>
+<script type="text/javascript" src="../libcommon/plugins/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="../libcommon/plugins/jquery-validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../../libcommon/plugins/lodash/lodash.min.js"></script>
+<script type="text/javascript" src="../libcommon/javascripts/notification/notification.js"></script>
+<script type="text/javascript" src="../libcommon/styleguide/ams/dist/js/index.js"></script>
+<script type="text/javascript" src="../libcommon/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="../libcommon/js/jsComponents.js"></script>
+<script type="text/javascript" src="../libcommon/javascripts/blockUI.min.js"></script>
+<script type="text/javascript" src="../libcommon/plugins/tableToExcel/tableToExcel.js"></script>
+<script type="text/javascript" src="../libcommon/plugins/vue/vue.min.js"></script>
+<script type="text/javascript" src="../libcommon/plugins/axios/axios.min.js"></script>
+
+<style type="text/css">
+        .bg-basecolor {
+            background-color: #124456 !important;
+        }
+        .text-basecolor {
+            color: #124456 !important;  
+        }
+        .main-header, .header-dark {
+            background-color: #124456 !important;
+        }
+
+        .footer {
+            background-color: #124456 !important;
+        }
+
+        .glyphicon, .main-header .dropdown-menu .glyphicon {
+            color: #124456;
+        }
+
+        .fa.icon-color {
+            color: #124456 !important;
+        }
+
+        .btn-primary {
+            background-color: #124456 !important;
+            border-color: #124456;
+        }
+
+        .btn-primary.transparent {
+            background-color: transparent !important;
+            color: #124456 !important;
+        }
+
+        a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+            background-color: #124456;
+            border-color: #124456        }
+
+        .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+            background-color: #124456;
+            border-color: #124456        }
+
+        .triangle-right {
+            border-left: 10px solid #124456 !important;
+        }
+
+        .triangle-left {
+            border-right: 10px solid #124456 !important;
+        }
+
+        .triangle-top-right {
+            border-right: 15px solid#124456;
+        }
+
+        .col-md-5.college_title {
+            text-shadow: none;
+        }
+
+        .icon-primary {
+            color: #124456 !important;
+        }
+
+        a {
+            color: #124355;
+        }
+
+        .list-group .inner-active {
+            color: #124456 !important;
+        }
+
+        input[type=checkbox].option-input:checked, input[type=radio].option-input:checked {
+            background: #124456;
+        }
+
+        .form-control:hover, .form-control:focus {
+            border: 1px solid#124355;
+        }
+
+        .mail-nav .active a {
+            color: #124355 !important;
+        }
+
+        #popup_title {
+            background: #124456;
+        }
+
+        #popup_ok, #popup_cancel {
+            background: #124456;
+        }
+
+        .loader-md, .loader-lg, .loader-sm {
+            border-top-color: #124355;
+        }
+
+        .b-primary {
+            border-color: #124456 !important;
+        }
+
+    </style>
+
+<style type="text/css">
+    .hidden-on-desktop {
+    display: none !important    }
+
+    .hidden-on-mobile {
+        }
+</style>
+<script type="text/javascript">
+
+    /**
+     * To check whether the user is using the ams using our mobile app or accessing through normal browser.
+     */
+    function isMobileBrowser() {
+        // JSInterface will only exists for Mobile app.
+        if (typeof (window.JSInterface) !== 'undefined')
+            return false;
+        return true;
+    }
+</script></head>
+<body>
+
+<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-80522424-2', 'auto',{
+		  	'clientId': 'STJOSEPHS_student_10259_SANDRA S MENON'
+		  });
+		</script>
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+	var menu = 'home';
+	var action = '';
+	if (menu != '') 
+	{
+		if (action != '') 
+		{
+			ga('send', {
+		  		hitType: 'pageview',
+		  		page: '/student/home/',
+		  		dimension1: 'STJOSEPHS',      // colege_code
+		  		college_code: 'STJOSEPHS',
+		  		title:'STJOSEPHS:home->',
+		  		dimension2:'CSSF',   // department
+		  		dimension3:'home->', // Original Title
+		  		dimension4:'SANDRA S MENON', // Admin's name
+		  		dimension5:'STUDENT',  // User type
+		  		dimension6: window.location.search  // Query params
+			});
+		}
+		else
+		{
+			ga('send', {
+		  		hitType: 'pageview',
+		  		page: '/student/home',
+		  		dimension1: 'STJOSEPHS',      // colege_code
+		  		title:'STJOSEPHS:home',
+		  		dimension2:'CSSF',   // department
+		  		dimension3:'home', // Original Title
+		  		dimension4:'SANDRA S MENON', // Admin's name
+		  		dimension5:'STUDENT',  // User type
+		  		dimension6: window.location.search  // Query params
+			});
+		}
+	}
+
+});
+	
+</script>
+
+<script type="text/javascript" src="../libcommon/script/baloon/wz_tooltip.js"></script>
+<div class="row main-header">
+<div class='col-md-5 college_title'> St. Joseph's College (Autonomous) Irinjalakuda
+</div>
+<div class='col-md-7'>
+<ul class="top-menu pull-right">
+<li class="active">
+<a href="student.php?menu=home">
+<span class='glyphicon glyphicon-home'></span>
+&nbsp; Home
+</a>
+</li>
+<li>
+<a href="student.php?menu=mymark&action=list">
+<span class='glyphicon glyphicon-signal'></span>
+&nbsp; My performance
+</a>
+</li>
+<li>
+<a href="student.php?menu=sdocuments">
+<span class='glyphicon glyphicon-file'></span>
+&nbsp; Documents
+</a>
+</li><li>
+<a class="notification-link" id="notificationDropdownIcon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+<span class="glyphicon glyphicon-bell notification-icon dropdown-toggle"></span>
+<span id="customBadgeNotifier" class=" custom-badge-notifier bg-red3">18</span></a><ul class="dropdown-menu notification-panel custom-notification-triangle" id="notificationPanel" aria-labelledby="notificationDropdown">
+<li class="dropdown-header header-ribbon b-b-1-g text-dark-grey5">
+<h5>Notifications</h5>
+</li><li class="notification-item notification-list-item notification-item-not-read" data-is-read="0" data-notification-id="92919" data-notification-recipient-id="3720643">
+<a class="notification-list" href="" target="_blank">
+<div class="notification-body"></div>
+<div>
+<small class="format-date-as-from_now">2022-04-08 16:24:19</small>
+</div>
+</a>
+</li><li class="notification-item notification-list-item notification-item-not-read" data-is-read="0" data-notification-id="92641" data-notification-recipient-id="3706937">
+<a class="notification-list" href="" target="_blank">
+<div class="notification-body"></div>
+<div>
+<small class="format-date-as-from_now">2022-03-31 09:54:03</small>
+</div>
+</a>
+</li><li class="notification-item notification-list-item notification-item-not-read" data-is-read="0" data-notification-id="92622" data-notification-recipient-id="3706081">
+<a class="notification-list" href="/student/student.php?menu=assignments&action=detail&aid=19394&bid=&subid=3332&stid=1538&sbid=11907" target="_blank">
+<div class="notification-body">New Assignment Published In E-COMMERCE</div>
+<div>
+<small class="format-date-as-from_now">2022-03-30 14:06:51</small>
+</div>
+</a>
+</li><li class="notification-item notification-list-item notification-item-not-read" data-is-read="0" data-notification-id="92616" data-notification-recipient-id="3705733">
+<a class="notification-list" href="/student/student.php?menu=assignments&action=detail&aid=19388&bid=&subid=3333&stid=1609&sbid=11908" target="_blank">
+<div class="notification-body">New Assignment Published In COMPUTER GRAPHICS</div>
+<div>
+<small class="format-date-as-from_now">2022-03-30 10:32:41</small>
+</div>
+</a>
+</li><li class="notification-item notification-list-item notification-item-not-read" data-is-read="0" data-notification-id="92560" data-notification-recipient-id="3703071">
+<a class="notification-list" href="/student/student.php?menu=online_exam&action=listexam&subid=3719&stid=1646&subbID=&sbid=12597" target="_blank">
+<div class="notification-body">You have an Online exam: <b></b> for SJBCA4A14 on 29-03-2022</div>
+<div>
+<small class="format-date-as-from_now">2022-03-29 14:31:35</small>
+</div>
+</a>
+</li><div class="notificationFooter">
+<a href="/student/student.php?menu=notification&action=view" class="text-dark-grey5">
+See All
+</a>
+</div>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown">
+<span class="glyphicon glyphicon-off">
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="student.php?menu=home">
+<b class="truncate">SANDRA S MENON</b>
+</a>
+</li>
+<li>
+<a href="student.php?menu=home">
+<span class='glyphicon glyphicon-user'></span>
+&nbsp; My Account
+</a>
+</li>
+<li class="divider"></li>
+<li>
+<a href="index.php?act=logout">
+<span class='glyphicon glyphicon-log-out' title="Logout"></span>
+&nbsp; Logout
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div></div>
+<div class="container-fluid">
+<div class="row">
+<ol class="breadcrumb top-nav"></ol>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 left-menu">
+<style type="text/css">
+    .pic_space {
+        width: 60%;
+        border-radius: 3px;
+    }
+
+    .common_pic {
+        height: 70%;
+        width: 70%;
+        border-radius: 50%;
+    }
+</style>
+<div class="row">
+<div class="list-group-item text-center profile_pic">
+<a href="?menu=profile&action=edit_pic" id="profile_pic" style="outline: none" title="Change Your Photo">
+<div id="img_overlay">
+<span class="glyphicon glyphicon-camera"></span>
+</div>
+<img src="../../studentsphoto/STJOSEPHS/fj49v8fwtq.jpg" width="60%" style="margin:70px 0; border:0;" /> </a>
+</div>
+</div>
+<div class="sidebar-nav">
+<div class="nav">
+<div class="list-group nav"><a class="list-group-item" href="?menu=student_details&action=frm_edit"><b>Profile Settings</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=myfees&action=payfee"><b>My Fees</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=mydocs&action=list"><b>My Documents</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=attendance&action=tview"><b>Attendance</b></a></div>
+<div class="list-group nav"><a class="list-group-item" href="?menu=opencourse&action=apply"><b>Electives</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=asimark&action=list"><b>Assignment Mark</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=normalisedMarks&action=list"><b>Normalised Marks</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=mymark&action=list"><b>My Performance</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=sessional_exam_registration&action=examlist"><b>Sessional Exam Retest
+Registration</b></a></div><div class="list-group nav"><b><a class="list-group-item" href="?menu=exam_registration&action=registration"><b>Exam Registration</b></a></b></div><div class="list-group nav"><a class="list-group-item" href="?menu=exam_revaluation&action=registration"><b>Exam Revaluation</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=supply_improve&action=registration"><b>Supplementary / Improvement</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=online_examination&action=list"><b style="color:#6a3390;font-weight:bold!important;">Audit Course</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=hosteltransport&action=hostel"><b>Hostel & Transport</b></a></div><div class="nav list-group"><div id="htw_principal_message"><a class="list-group-item" href="?menu=message&action=inbox"><b>Message box</b> (0)</a></div></div><div class="list-group nav"><a class="list-group-item" href="?menu=grievance&action=sendGrievance"><b>Grievance</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=studentiso"><b>Rules and Regulations</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=committee&action=list"><b>Committee</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=gracemarks&action=registration"><b>Grace Marks</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=specialexam&action=registration"><b>Special Exam</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=evaluation&action=staffeval"><b>Evaluation</b></a></div><div class="list-group nav"><a class="list-group-item" href="?menu=job&action=from_clg"><b>Job</b></a></div><div class="nav list-group"><div id='htw_leave'><a class="list-group-item" href="?menu=leave&action=apply"><b>Leave Management</b></a></div></div><div class="nav list-group"><div id='htw_dynamicfeedback'><a class="list-group-item" href="?menu=dynamicfeedback&action=dynamicfeed"><b>Feedback</b></a></div></div><div class="nav list-group"><div id='htwQuizAndSurvey'><a class="list-group-item" href="?menu=quiz_and_survey&action=view"><b>Quiz And Course Survey</b></a></div></div><div class="nav list-group"><div id='htw_online_meet'><a class="list-group-item" href="?menu=online_meet&action=list"><b>Online Meetings</b></a></div></div>
+</div>
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 main-content">
+
+<script type="text/template" id="qq-template">
+    <div class="qq-uploader-selector qq-uploader qq-gallery" qq-drop-area-text="Drop files here">
+        <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
+            <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                 class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+        </div>
+        <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
+            <span class="qq-upload-drop-area-text-selector"></span>
+        </div>
+        <div class="qq-upload-button-selector qq-upload-button no-shadow">
+            <div>Upload files</div>
+        </div>
+        <span class="qq-drop-processing-selector qq-drop-processing">
+            <span>Processing dropped files...</span>
+            <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+        </span>
+        <ul class="qq-upload-list-selector qq-upload-list" role="region" aria-live="polite"
+            aria-relevant="additions removals">
+            <li>
+                <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                <div class="qq-progress-bar-container-selector qq-progress-bar-container">
+                    <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                         class="qq-progress-bar-selector qq-progress-bar"></div>
+                </div>
+                <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                <div class="qq-thumbnail-wrapper">
+                    <img class="qq-thumbnail-selector" qq-max-size="120" qq-server-scale>
+                </div>
+                <button type="button" class="qq-upload-cancel-selector qq-upload-cancel">X</button>
+                <button type="button" class="qq-upload-retry-selector qq-upload-retry">
+                    <span class="qq-btn qq-retry-icon" aria-label="Retry"></span>
+                    Retry
+                </button>
+
+                <div class="qq-file-info">
+                    <div class="qq-file-name">
+                        <span class="qq-upload-file-selector qq-upload-file"></span>
+                        <span class="qq-edit-filename-icon-selector qq-btn qq-edit-filename-icon"
+                              aria-label="Edit filename"></span>
+                    </div>
+                    <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
+                    <span class="qq-upload-size-selector qq-upload-size"></span>
+                    <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">
+                        <span class="qq-btn qq-delete-icon" aria-label="Delete"></span>
+                    </button>
+                    <button type="button" class="qq-btn qq-upload-pause-selector qq-upload-pause">
+                        <span class="qq-btn qq-pause-icon" aria-label="Pause"></span>
+                    </button>
+                    <button type="button" class="qq-btn qq-upload-continue-selector qq-upload-continue">
+                        <span class="qq-btn qq-continue-icon" aria-label="Continue"></span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+
+        <dialog class="qq-alert-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">Close</button>
+            </div>
+        </dialog>
+
+        <dialog class="qq-confirm-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">No</button>
+                <button type="button" class="qq-ok-button-selector">Yes</button>
+            </div>
+        </dialog>
+
+        <dialog class="qq-prompt-dialog-selector">
+            <div class="qq-dialog-message-selector"></div>
+            <input type="text">
+            <div class="qq-dialog-buttons">
+                <button type="button" class="qq-cancel-button-selector">Cancel</button>
+                <button type="button" class="qq-ok-button-selector">Ok</button>
+            </div>
+        </dialog>
+    </div>
+</script>
+<script type="text/javascript" src="../libcommon/js/jquery.progressTimer.js"></script>
+<script type="text/javascript" src="../../libcommon/plugins/s3.fine-uploader/s3.fine-uploader.core.min.js"></script>
+<script type="text/javascript" src="../../libcommon/plugins/s3.fine-uploader/s3.fine-uploader.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../libcommon/plugins/s3.fine-uploader/fine-uploader.css">
+<link rel="stylesheet" type="text/css" href="../../libcommon/plugins/s3.fine-uploader/fine-uploader-gallery.css">
+<script>
+  function initS3Upload(id, inputFiled) {
+        let self = this;
+        self.uploadedFiles = [];
+        self.deletedFiles = [];
+        self.uploader = new qq.s3.FineUploader({
+            validation: {
+                allowedExtensions: ['docx', 'pptx', 'xlsx', 'xls', 'doc', 'pdf', 'odt', 'txt', 'rtf', 'ppt','jpg','png'],
+                sizeLimit: '524288000'
+            },
+            element: document.getElementById(id),
+            request: {
+
+                endpoint: 'https://amsfilestore.s3.amazonaws.com',
+                accessKey: 'AKIAIZ3OJULHNA3S24IQ'
+            },
+
+            deleteFile: {
+                enabled: false,
+            },
+            signature: {
+                endpoint: '/libcommon/s3/endpoint-cors.php',
+                version: 4
+            },
+            objectProperties: {
+                region: 'ap-south-1',
+                key: function (fileId) {
+                    var filename = self.uploader.getName(fileId);
+                    var uuid = self.uploader.getUuid(fileId);
+                    var ext = filename.substr(filename.lastIndexOf('.') + 1);
+                    return 'STJOSEPHS/work_register_notes/2022/' + uuid + '-10259' + '.' + ext;
+                }
+            },
+
+            callbacks: {
+                onSubmitted: function (id, name) {
+                    self.uploadedFileName = name;
+                },
+                onUpload: function (id, name) {
+                    $('#vue-app').block();
+                },
+                onError: function (id, name, errorReason, xhrOrXdr) {
+                    $('#vue-app').unblock();
+                    if (errorReason.toLowerCase().indexOf('policy expired') !== -1) {
+                        $.simpleDialog({
+                            title: "Incorrect System Time",
+                            message: "Your system date and/or time is incorrect. Please correct it and click retry to upload the file."
+                        });
+                    }
+                },
+
+                onComplete: function (fileId, name, response) {
+                    if (response.success) {
+                        var fileInfo = {
+                            name: name,
+                            key: self.uploader.getKey(fileId),
+                            bucket: self.uploader.getBucket(fileId)
+                        };
+                        jsonValue = JSON.stringify(fileInfo);
+                        self.uploadedFiles.push(jsonValue);
+                    }
+
+                },
+                onAllComplete: function () {
+                    var uploads = self.uploader.getUploads({
+                        status: qq.status.UPLOAD_SUCCESSFUL
+                    });
+                    if (uploads && uploads.length) {
+                        $('.qq-upload-button').addClass('hidden');
+                        SaveUploadedNote();
+                    }
+                }
+            }
+        });
+    }
+    function SaveUploadedNote(){
+    var data={};
+    var self = this;
+    // $('#model_add_note_note').removeClass("error"); 
+    // $('#addedNotes_msg').html(""); 
+
+	data.studentID = $("#model_add_note_studentID").val();
+	data.hour = $("#model_add_note_hour").val();
+	data.sbsID = $("#model_add_note_sbsID").val();
+	data.date = $("#model_add_note_date").val();	
+    data.note = $("#model_add_note_note").val();
+    if(uploadedFiles){
+        data.uploadedFiles = JSON.stringify(uploadedFiles);
+    }
+    	
+
+	data.action = "SAVE_STUDENT_HOUR_WISE_NOTES";
+    if((data.note != "" && data.note != null ) || (data.uploadedFiles!= null && data.uploadedFiles !="") ){
+        $.ajax({
+	     type: "POST",
+         url: "home/ajax/student_home_ajax.php",
+	     data: data,
+	     success: function(response){
+	         var result = $.parseJSON(response);                
+	         if(result.success==true)
+	         {
+				toastr.success("Note Uploaded Successfully!");
+                if(result.data.url){
+                            $('#addNoteDocument').addClass('hidden'); 
+                            $('#upload_document_label').addClass('hidden');  
+                            var object = result.data.url;
+                            let html = "<div id= 'uploaded_document' class='row mt-1rem response-div'>" +
+                                "           <div class='col-md-12'>" +
+                                "               <a href='" + object.url + "' target='_blank'>" + object.name +
+                                "               </a>" +
+                                "               <a href='#' class='text-danger pull-right' onclick='deleteUploadedNote(event,\"" + result.data.resourceId + "\")'>" +
+                                "                   <i class='fa fa-trash-o'></i>" +
+                                "               </a>" +
+                                "               <input type='hidden' class='uploaded-support-documents2' value='" +  result.data.resourceId + "'/>" +
+                                "           </div>" +
+                                "       </div>";
+                            $('#uploaded-support-documents2').append(html);
+                            self.uploadedFiles = [];
+                        }
+	         }else{
+				toastr.error(result.msg);
+			 }
+	     }
+	    });
+    }else{
+        $('#model_add_note_note').addClass("error"); 
+        $('#addedNotes_msg').html("<em>Please enter a valid note!</em>"); 
+    }
+
+}
+
+  
+    function deleteUploadedNote(event, id) {
+         event.preventDefault();
+         var data = {};             
+         data.action =  "DELETE_WORK_REGISTER_DOCUMENT";
+         data.resourceId = id;
+         $.simpleDialog({
+             title: "Do you want to delete this document?",
+             message: "Are you sure do you want to delete this document?",
+             confirmBtnText: "Yes! Delete",
+             cancelBtnText: "No! Cancel",
+             confirmBtnClass: 'btn-danger',
+             onSuccess: function () {
+                 $.ajax({
+                     url: "home/ajax/student_home_ajax.php",
+                     type: "POST",
+                     data: data ,
+                     success: function (response) {
+                        var result = $.parseJSON(response);   
+                         if (result.success) {
+                             $(event.target).parents('.response-div').remove();
+                             $("#"+id).remove();
+                             $('#addNoteDocument').removeClass('hidden'); 
+                             $('#upload_document_label').removeClass('hidden');   
+                             $('.qq-upload-button').removeClass('hidden');
+                             toastr.success("Document deleted successfully");
+                         } else {
+                             toastr.error(response.msg);
+                         }
+                     },
+                     error: function (xhr, status, error) {
+                         toastr.error("Error occurred while deleting the document. Try again later or contact our support team");
+                     }
+                 })
+             }
+         });
+         return false;
+    }
+
+    function display(obj, id, inputFiled) {
+        if (this.uploader) {
+            this.uploader = null;
+            this.uploadedFiles = [];
+            $('#' + id).empty();
+        }
+        if ($(obj).is(':checked')) {
+            $('#' + id).parents('tr').removeClass('hidden');
+            initS3Upload(id, inputFiled);
+        } else {
+            $('#' + targetId).empty();
+            $('#' + id).parents('tr').addClass('hidden');
+        }
+    }
+function goToOnlineClass(mid,sbsId) {
+    let data = {};
+    data.mid = mid;
+    data.sbsId = sbsId;
+    data.action = "GET_MEETINGS";
+    $.ajax({
+        type: "POST",
+        url: "home/ajax/student_home_ajax.php",
+        data: data,
+        dataType:"JSON",
+        success: function (response) {
+            if(response.success){
+                window.open(response.msg, '_blank');
+            }else{
+                toastr.error(response.msg);
+            }
+        }
+    });
+    return false;
+}
+function sliderToAddHOurWiseNOtes(timetableDate, sbsID, hourID){
+    $('#model_add_note_note').removeClass("error"); 
+    $('#addedNotes_msg').html(""); 
+    studentId = 10259;
+    var data={};
+    data.studentID = studentId;
+	data.hour =hourID;
+	data.sbsID = sbsID;
+    data.date = timetableDate;
+    this.uploadedFiles = [];
+    $("#model_add_note_studentID").val(studentId);
+    $("#model_add_note_hour").val(hourID);
+    $("#model_add_note_sbsID").val(sbsID);
+    $("#model_add_note_date").val(timetableDate);
+	data.action = "GET_STUDENT_HOUR_WISE_NOTES";
+    $.ajax({
+	     type: "GET",
+         url: "home/ajax/studentHourwiseNotes_ajax.php",
+	     data: data,
+	     success: function(response){
+	         var result = $.parseJSON(response);                
+	         if(result.success==true)
+	         {
+                 if(result.data != null){
+                    $("#model_add_note_note").val(result.data.note); 
+                    $("#note_id").val(result.data.id);
+
+                    if(result.data.isApproved == 1){
+                        $("#model_add_note_note"). attr('disabled','disabled'); 
+                        $("#modal-note-details-save"). attr('disabled','disabled');    
+                        
+                        $('#addNoteDocument').addClass('hidden'); 
+                        $('#upload_document_label').addClass('hidden');  
+                        if(result.data.url){
+                            var object = result.data.url;
+                            let html = "<div id= 'uploaded_document' class='row mt-1rem response-div'>" +
+                                "           <div class='col-md-12'>" +
+                                "               <a href='" + object.url + "' target='_blank'>" + object.name +
+                                "               </a>" +
+                                "               " +
+                                "               <input type='hidden' class='uploaded-support-documents2' value='" +  result.data.resourceId + "'/><br><span style='color:green;'><b>Note Approved</b></span>" +
+                                "           </div>" +
+                                "       </div>";
+                            $('#uploaded-support-documents2').append(html);
+                        }else{
+                            let html = "<div class='response-div'><span style='color:green;'><b>Note Approved</b></span></div>";
+                            $('#uploaded-support-documents2').append(html);
+
+                        } 
+                    }else if (result.data.isApproved == 0){
+                        $("#model_add_note_note"). removeAttr('disabled','disabled'); 
+                        $("#modal-note-details-save"). removeAttr('disabled','disabled'); 
+                        if(result.data.url){
+                            $('#addNoteDocument').addClass('hidden'); 
+                            $('#upload_document_label').addClass('hidden');  
+                            var object = result.data.url;
+                            let html = "<div id= 'uploaded_document' class='row mt-1rem response-div'>" +
+                                "           <div class='col-md-12'>" +
+                                "               <a href='" + object.url + "' target='_blank'>" + object.name +
+                                "               </a>" +
+                                "               <a href='#' class='text-danger pull-right' onclick='deleteUploadedNote(event,\"" + result.data.resourceId + "\")'>" +
+                                "                   <i class='fa fa-trash-o'></i>" +
+                                "               </a>" +
+                                "               <input type='hidden' class='uploaded-support-documents2' value='" +  result.data.resourceId + "'/><br><span style='color:red;'><b>Note Disapproved</b></span>" +
+                                "           </div>" +
+                                "       </div>";
+                            $('#uploaded-support-documents2').append(html);
+                        }else{
+                            $('#addNoteDocument').removeClass('hidden'); 
+                            $('#upload_document_label').removeClass('hidden');   
+                        } 
+                    }else{
+                        $("#model_add_note_note"). removeAttr('disabled','disabled'); 
+                        $("#modal-note-details-save"). removeAttr('disabled','disabled'); 
+                        if(result.data.url){
+                            $('#addNoteDocument').addClass('hidden'); 
+                            $('#upload_document_label').addClass('hidden');  
+                            var object = result.data.url;
+                            let html = "<div id= 'uploaded_document' class='row mt-1rem response-div'>" +
+                                "           <div class='col-md-12'>" +
+                                "               <a href='" + object.url + "' target='_blank'>" + object.name +
+                                "               </a>" +
+                                "               <a href='#' class='text-danger pull-right' onclick='deleteUploadedNote(event,\"" + result.data.resourceId + "\")'>" +
+                                "                   <i class='fa fa-trash-o'></i>" +
+                                "               </a>" +
+                                "               <input type='hidden' class='uploaded-support-documents2' value='" +  result.data.resourceId + "'/>" +
+                                "           </div>" +
+                                "       </div>";
+                            $('#uploaded-support-documents2').append(html);
+                        }else{
+                            $('#addNoteDocument').removeClass('hidden'); 
+                            $('#upload_document_label').removeClass('hidden');   
+                        }        
+                    }
+                   
+                 }else{
+                    $("#model_add_note_note"). removeAttr('disabled','disabled'); 
+                    $("#modal-note-details-save"). removeAttr('disabled','disabled'); 
+                   
+                    $('#addNoteDocument').removeClass('hidden'); 
+                    $('#upload_document_label').removeClass('hidden');       
+                 }
+           
+                $('#modal-add-notes').show();	
+                    
+	         }else{
+				toastr.error(result.msg);
+			 }
+	     }
+	    });
+      
+	}
+function SaveStudentHourWiswNotes(){
+    var data={};
+    $('#model_add_note_note').removeClass("error"); 
+    $('#addedNotes_msg').html(""); 
+
+	data.studentID = $("#model_add_note_studentID").val();
+	data.hour = $("#model_add_note_hour").val();
+	data.sbsID = $("#model_add_note_sbsID").val();
+	data.date = $("#model_add_note_date").val();	
+    data.note = $("#model_add_note_note").val();
+    var resourceId = $(".uploaded-support-documents2").val();
+
+    if(uploadedFiles.count > 0){
+        data.uploadedFiles = JSON.stringify(uploadedFiles);
+    }
+    	
+
+	data.action = "SAVE_STUDENT_HOUR_WISE_NOTES";
+    if((data.note != "" && data.note != null ) || (resourceId!= null && resourceId !="") ){
+        $.ajax({
+	     type: "POST",
+         url: "home/ajax/student_home_ajax.php",
+	     data: data,
+	     success: function(response){
+	         var result = $.parseJSON(response);                
+	         if(result.success==true)
+	         {
+				toastr.success("Note Added Successfully!");
+               CloseAddNoteModal();
+	         }else{
+				toastr.error(result.msg);
+			 }
+	     }
+	    });
+    }else{
+        $('#model_add_note_note').addClass("error"); 
+        $('#addedNotes_msg').html("<em>Please enter a valid note or Upload note!</em>"); 
+    }
+
+}
+function CloseAddNoteModal()
+{
+    $('#modal-add-notes').hide();	
+    $("#model_add_note_studentID").val('');
+    $("#model_add_note_hour").val('');
+    $("#model_add_note_sbsID").val('');
+    $("#model_add_note_date").val('');
+    $("#note_id").val(''); 
+    $("#model_add_note_note").val('');
+    $('#addNoteDocument:checked').trigger("click");
+    $('.response-div').remove();
+
+    
+
+}
+</script>
+<div class="panel panel-primary hidden-on-mobile">
+<div class="panel-heading">Notifications</div>
+<div class="panel-body">
+<div class="row">
+<div class="col-md-12">
+<div class="col-md-3">
+<img src="../libcommon/images/assignment.png" />
+<a href="?menu=mytask&action=list"> Assignments </a>
+</div>
+<div class="col-md-3">
+<img src="../libcommon/images/assign.png" />
+<a href="?menu=message_dept&action=list"> Announcements </a>
+</div>
+<div class="col-md-3">
+<img src="../libcommon/images/message.png" />
+<a href="?menu=message_batch&action=list">From
+Tutor
+</a>
+</div>
+<div class="col-md-3">
+<img src="../libcommon/images/exam.png" />
+<a href="?menu=exam&action=list">Exams</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="modal-add-notes" class="modal">
+<div class="modal-dialog" style="width: 50%;">
+<div class="modal-content">
+<div class="modal-header scholership-head">
+<button type="button" onclick='CloseAddNoteModal()' aria-hidden="true" class="close scholership-close">&times;</button>
+<h5 class="modal-title"><b>Add Note</b></h5>
+</div>
+<div class='modal-body'>
+<div class='row'>
+<div id='addNoteDetails'>
+<div class='row'>
+<div class='col-md-6 text-left'>
+Add Your Note Here :
+</div>
+<div class='col-md-6 text-right'>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-12 text-center'>
+<textarea id='model_add_note_note' class='form-control  m-t-10 m-b-10' cols='55' rows='5' style='width:100%;'></textarea>
+<span id='addedNotes_msg' class='form_error' style='font:red;'></span>
+<table width="100%">
+<tr class="">
+<td colspan='2'>
+<label id="upload_document_label" for='addNoteDocument'>Upload Notes</label><input id="addNoteDocument" class="notes-upload" type="checkbox" onchange='display(this,"upload-support-documents2","uploaded-support-documents2");' style="vertical-align:top;" />
+</td>
+ </tr>
+<tr class="hidden file-upload-div">
+<td colspan="2">
+<div id="upload-support-documents2" class="mt-1 "></div>
+</td>
+</tr>
+<tr>
+<td colspan="2" id="uploaded-support-documents2">
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="loading-progress" id='addPlanProgress'></div>
+<div class="modal-footer">
+<input type='hidden' id='model_add_note_studentID'>
+<input type='hidden' id='model_add_note_hour'>
+<input type='hidden' id='model_add_note_sbsID'>
+<input type='hidden' id='model_add_note_date'>
+<input type='hidden' id='note_id'>
+<button type="button" onclick='CloseAddNoteModal()' class="btn btn-primary">
+Cancel</button>
+<button type="button" id="modal-note-details-save" class="btn btn-green" onclick='SaveStudentHourWiswNotes();'>Submit</button>
+</div>
+</div>
+</div>
+</div>
+<link rel='stylesheet' type='text/css' href='/libcommon/plugins/fullcalendar/fullcalendar.css' />
+<link rel='stylesheet' type='text/css' href='/libcommon/plugins/fullcalendar/custom-fullcalendar.css' />
+<link rel='stylesheet' type='text/css' href='/libcommon/plugins/fullcalendar/fullcalendar.print.css' media='print' />
+<link rel='stylesheet' type='text/css' href='/libcommon/style/fullcalendar/jquery-ui.css' />
+<script type='text/javascript' src='/libcommon/javascripts/jquery/jquery-ui-1.8.17.custom.min.js'></script>
+<script type='text/javascript' src='/libcommon/plugins/fullcalendar/fullcalendar.js'></script>
+<script type='text/javascript' src='/libcommon/style/fullcalendar/jquery-ui.min.js'></script>
+<script>
+    $(document).ready(function () {
+        $('#loader').hide();
+        document.cookie = 'tabstat=studentcal';
+        if (readCookie('tabstat')) {
+            tabcontroller(readCookie('tabstat'));
+        }
+        else {
+        	document.cookie = 'tabstat=studentcal';
+        	tabcontroller('tabstat=studentcal');
+        }
+        $("a.tab1").click(function (e) {
+            tabcontroller(e.target.id);
+        });
+    });
+
+    function readCookie(name) {
+        var cookiename = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(cookiename) == 0) return c.substring(cookiename.length, c.length);
+        }
+        return null;
+    }
+
+
+    function tabcontroller(tabname) {
+        // switch all tabs off
+        $(".nav-tabs li.active").removeClass("active");
+
+        // switch this tab on
+        $("#" + tabname).parent("li").addClass("active");
+
+        // slide all content up
+        //$(".content").slideUp("fast");
+
+        $('#event-details').remove();
+        switch (tabname) {
+            case "studentcal":
+                defaultpage(6,152);
+                break;
+
+            case "studenttime":
+                timetable(152, 5);
+                break;
+
+            case "studentsubject":
+                subjectlist(152, 5);
+                break;
+            case "studentattendance":
+                attendancelist(152, 5);
+                break;
+        }
+    }
+
+    function attendancelist(bid, semid)
+    {
+    	document.cookie = 'tabstat=studentattendance';
+        $('#loader').show();
+        var dataString = "bid="+152+
+        "&semid=" +5;
+        $.ajax({
+            type: "GET",
+            url: "attendance/attendance_subject_wise.php",
+            data: dataString,
+            success: function (response) {
+                $('#loader').hide();
+                $("#content_1").html(response);
+            }
+        });
+        return false;
+    }
+    function defaultpage(did, bid) {
+        $('#loader').show();
+        document.cookie = 'tabstat=studentcal';
+        var dataString = "did=" + did + "&bid=" + bid;
+        $.ajax({
+            type: "GET",
+            url: "home/studentcalendar.php",
+            data: dataString,
+            success: function (response) {
+                $("#content_1").html(response);
+                $('#loader').hide();
+            }
+        });
+        return false;
+    }
+
+    function timetable(bid, semid) {
+        document.cookie = 'tabstat=studenttime';
+        $('#loader').show();
+        var dataString = "bid="+152+
+        "&semid=" +5;
+        $.ajax({
+            type: "GET",
+            url: "home/timetable.php",
+            data: dataString,
+            success: function (response) {
+                $('#loader').hide();
+                $("#content_1").html(response);
+            }
+        });
+        return false;
+    }
+
+    function subjectlist(bid, semid) {
+        document.cookie = 'tabstat=studentsubject';
+        $('#loader').show();
+        var dataString = "bid="+152+
+        "&semid=" +5;
+        $.ajax({
+            type: "GET",
+            url: "home/subjectlist.php",
+            data: dataString,
+            success: function (response) {
+                $('#loader').hide();
+                $("#content_1").html(response);
+            }
+        });
+        return false;
+    }
+
+</script>
+<div class="panel panel-primary">
+<div class="panel-heading">Batch: UG CSSF 2020, S5</div>
+<div class="panel-body">
+<ul class="nav nav-tabs">
+<li class="active">
+<a href="#" title="Student Calendar" class="tab1" id="studentcal">Calendar
+</a>
+</li>
+<li>
+<a href="#" title="Time Table" class="tab1" id="studenttime">Timetable</a>
+</li>
+<li>
+<a href="#" title="Subject List" class="tab1" id="studentsubject">Subjects
+</a>
+</li>
+<li>
+<a href="#" title="Student Attendance" class="tab1" id="studentattendance">Attendance
+</a>
+</li>
+</ul>
+<div id="content_1">
+<div id="loader" style="width:100px; height:50px; margin:50px 290px; float:left; display:block;">
+<img src="../libcommon/images/custom1/ajax_load.gif" />
+</div>
+</div>
+</div>
+</div>
+<script src="../libcommon/plugins/slideReveal/jquery.slidereveal.js"></script>
+<div class="panel panel-primary" id="slider">
+<a href='#' onclick="$('#slider').slideReveal('toggle')">
+<div id="test" class='bg-basecolor text-white fs-15'>
+
+NOTICE
+</div>
+</a>
+<div class="panel-heading" id='heading'>
+NOTICE BOARD<span class="close-x" title='close' onclick="$('#slider').slideReveal('hide')"></span>
+</div>
+<div class="panel-body" style="overflow-y: scroll; height:100%;">
+<div class="table-responsive" id='noticeDisplay'>
+<div class='pull-right hint-text' id='unreadCount'></div>
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>Value education link<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 13-02-2022 ,01:47 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 13-02-2022 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+Value edu... </div>
+</div>
+ <a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=1164'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>AUDIT COURSE LINK.<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 28-01-2022 ,09:18 am</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 28-01-2022 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+AUDIT COU... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=1073'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>SECOND SEMESTER AUDIT COURSE LINK<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 27-09-2021 ,02:56 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 27-09-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+AUDIT COU... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=1012'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>AUDIT COURSE LINK<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 17-09-2021 ,02:56 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 17-09-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+AUDIT COU... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=982'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>AUDIT COURSE EXAMINATION LINK<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 18-08-2021 ,02:18 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 18-08-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=952'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+ <div class='bold col-md-10 fs-16'>Examination postponed<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 17-06-2021 ,08:56 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 17-06-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+Dear students,It is hereby informed that 2nd Semeste... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=920'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>EXAMINATION INFORMATION FOR PG STUDENTS<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 09-03-2021 ,03:01 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 09-03-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+Dear Stuydents,First semester PG examinations will s... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=734'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>EXAMINATION INFORMATION FOR FIRST SEMSTER UG STUDENTS<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 09-03-2021 ,02:56 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 09-03-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+Dear students,First semester UG examinations will st... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=733'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>EXAMINATION INFORMATION FIRST SEMESTER PG STUDENTS<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 09-03-2021 ,02:56 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 09-03-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+Dear Strudents,First semester UG examinations will s... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=732'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>EXAMINATIONS<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 12-02-2021 ,03:49 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 12-02-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+The First Semester UG and PG End Semester Examinations tentatively sche... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=677'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>EXAMINATIONS<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 12-02-2021 ,03:49 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 12-02-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+The First Semester UG and PG End Semester Examinations tentatively sche... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=659'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>value education<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 05-02-2021 ,02:20 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 05-02-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+</div>
+</div>
+</div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>value education link<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 04-02-2021 ,01:47 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+Event Date : 04-02-2021 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+value edu... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=538'>Read more...</a> </div>
+<hr class='m-5' />
+<div class='row p-5 '>
+<div class='row'>
+<div class='bold col-md-10 fs-16'>Release of the book &quot;Aathmaspandhanangal&quot; penned by our former principal, Sr Dr Isabel on 2nd Dec, 2. 30 pm<br><h6 class="text-secondary"><i class="fa fa-calendar" aria-hidden="true"></i> 01-12-2020 ,07:47 pm</h6></div>
+<div class='text-right pull-right fs-13 bold'>
+ Event Date : 01-12-2020 </div>
+</div>
+<div class='row'>
+<div class='col-md-12 notice-content'>
+Release of the book "Aathmaspandhanangal" penned by our forme... </div>
+</div>
+<a class='pull-right text-blue5 m-t-5' href='?menu=noticeboard&action=view&id=409'>Read more...</a> </div>
+<hr class='m-5' />
+<a class='bg-light-grey1 p-5 text-center cursor-pointer text-dark-grey5 block' href='?menu=noticeboard&action=view'>See All</a>
+</div>
+
+</div>
+</div>
+<script>
+    $(document).ready(function() {
+        var slider = $("#slider").slideReveal({
+            position: "right",
+            overlay: true,
+            push: false,
+            autoEscape: true,
+            width: "50%",
+            speed: 300,
+            shown: function(slider, trigger){
+                $('body').css("overflow","hidden");
+            },
+            hidden: function(slider, trigger){
+                $('body').css("overflow","auto");
+            },
+        });
+            });
+
+    function setNoticesAsRead () {
+        var dataObj = {
+            "action" : "SET_NOTICE_AS_READ",
+            "userId" : "10259",
+            "userType" : "STUDENT",
+            "notices" : null        };
+
+        $.ajax({
+            type: "POST",
+            url: "noticeboard/ajax/ajax_noticeboard.php",
+            data: dataObj,
+            dataType: "json",
+            success: function(response) { }
+        });
+
+    }
+</script>
+<style>
+    #test {
+        position: absolute;
+        top:100px;
+        left:-33px;
+        padding: 10px 3px;
+        width: 26px;
+        text-align: center;
+        text-orientation: upright;
+        writing-mode: vertical-rl;
+    }
+    .bg-basecolor {
+        background-color: #124456;
+    }
+    .attachment-capsule {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        margin: 3px;
+        border-radius: 15px !important;
+        display: inline-block;
+    }
+    .attachment-capsule:before {
+        font-family: 'FontAwesome';
+        content: '\f0ab';
+        /* content: '\f0c6'; */
+        margin-right: 10px;
+    }
+    .attachment-capsule:hover {
+        background-color: #f3f3f3;
+    }
+</style> </div>
+</div>
+</div>
+<div class="row">
+<script type="text/javascript">
+
+  $(document).ready(function()
+  {
+    setFooter();
+  });
+function setFooter()
+{
+  var measure = $('.footer');
+        windowHeight = $(window).height();
+        divOffsetTop = measure.offset().top;
+        delta = windowHeight - divOffsetTop - 40;
+        if(delta > 0)
+          $('.footer').css("margin-top", delta);
+}
+</script>
+<div class="footer">
+<span> <a href="http://linways.com/" target="_blank" title="Linways">Powered
+by Linways Technologies Pvt. Ltd.</a>
+<div class="pull-right" style="color: #ffffff; font-size: 10px;">
+Product Version :3.4.0 AUTONOMOUS </div>
+</span>
+</div>
+</div>
+</div>
+</body>
+</html>

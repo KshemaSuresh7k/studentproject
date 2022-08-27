@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<body>
+
+
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+    
+        <div class="roww">
+
+            
+            {% if i.image %}
+            <td>
+                {% else %}
+            </td>
+            <label for="">syllabus &nbsp;&nbsp; : <a href="/static/files/digital.jpg" attributes-list download alt="" width="60" height="60">Download</label><br><br><br><br></label>
+           
+   <img src="/static/files/digital.jpg" alt="" width="60" height="60">
+ <td>
+    {% endif %}
+ </td>
+
+
+        </div>
+    <td>
+        
+    </td>
+    </form>
+</body>
+
+</html>

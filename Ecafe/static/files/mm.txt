@@ -1,0 +1,11 @@
+ <div class="dropdown">
+                <button class="dropbtn">semesters</button>
+                <div class="dropdown-content">
+                  <a href="semester1.html">semester1</a>
+                  <a href="semester2.html">semester2</a>
+                  <a href="semester3.html">semester3</a>
+                  <a href="semester4.html">semester4</a>
+                  <a href="semester5.html">semester5</a>
+                  <a href="semester6.html">semester6</a>
+                </div>
+              </div>

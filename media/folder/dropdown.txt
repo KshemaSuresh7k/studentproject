@@ -1,0 +1,15 @@
+ <li class="nav-item active">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                SEMESTER
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdown">
+                <li><a class="dropdown-item" href="/semester1.html">semester1</a></li>
+                <li><a class="dropdown-item" href="/semester2.html">semester2</a></li>
+                <li><a class="dropdown-item" href="/semester3.html">semester3</a></li>
+                <li><a class="dropdown-item" href="/semester4.html">semester4</a></li>
+                <li><a class="dropdown-item" href="/semester5.html">semester5</a></li>
+                <li><a class="dropdown-item" href="/semester6.html">semester6</a></li>
+              </ul>
+          </div>
+          </li>

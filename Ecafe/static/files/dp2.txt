@@ -1,0 +1,11 @@
+<li>
+                        <!-- First Tier Drop Down -->
+                        <label for="drop-2" class="toggle toogle-2">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
+                        </label>
+                        <a href="#">Register <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                        <input type="checkbox" id="drop-2">
+                        <ul>
+                           <li><a href="{% url 'student' %}" class="drop-text">Student</a></li>
+                           <li><a href="{% url 'parentreg' %}" class="drop-text">parent</a></li>
+                        </ul>
+                     </li>

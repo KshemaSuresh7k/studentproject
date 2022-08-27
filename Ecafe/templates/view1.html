@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="" method="POST">
+            {% csrf_token %}
+                <table>
+                    <tr>
+                        <th>List No.</th>
+                        <th>Semester</th>
+                        <th>Subject</th>
+                        <th>syllabus</th>
+                        <th>Study_Material</th>
+                        <th>Mock_Test</th>
+                        <th>Project</th>
+                    </tr>
+                    {% for i in cr %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ i.Semester }}</td>
+                        <td>{{ i.Subject }}</td>
+                        <td>{{ i.syllabus}}</td>
+                        <td>{{ i.Study_Material }}</td>
+                        <td>{{ i.Mock_Test }}</td>
+                        <td>{{ i.Project }}</td>
+                      
+                        <td><a href="{% url 'A01.html %}">VIEW</a></td>
+                        
+
+                    </tr>
+                    {% endfor %}
+                </table>
+        </form>
+    </body>
+</html>
